@@ -1,18 +1,51 @@
+<!DOCTYPE html>
+<html>
 <head>
-   <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
 </head>
-<center>
-  <ul class="menu">
-    <li class="links"><a href="index.html">Home</a></li>
-    <li class="links"><a href="aboutus.html">About Me</a></li>
-    <li class="links"><a href="">Best Projects</a> </li>
-    <li class="links"><a href="">Youtube Channel</a></li>
-    <li class="links"><a href="">Contact</a></li>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
 
-  </ul>
+</script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBdkgkxgQ-b0T1l6l5m9I5v-VXddNDSY3s",
+      authDomain: "animal-database-a50be.firebaseapp.com",
+      projectId: "animal-database-a50be",
+      storageBucket: "animal-database-a50be.appspot.com",
+      messagingSenderId: "1032667502862",
+      appId: "1:1032667502862:web:3c24bef0519b96cf109f5f",
+      measurementId: "G-81BM3VJ6RS"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
 
-</center>
-
-  <body>
-    <h1>Shaurya Mehta</h1>
-  </body>
+</html>
