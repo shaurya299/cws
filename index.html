@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Login page</title>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Song Bites</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
 <body>
-<form>
-    <label for="pswd">Enter your password: </label>
-    <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
-</form>
-<!--Function to check password the already set password is admin-->
-<script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "admin";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="welcome.html";
-        }
-        else{
-            alert("Passwords do not match.");
-        }
-    }
+    <nav>
+       <ul>
+            <li class="brand"><img src="bg.jpg" alt="Song Bites"></li>
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="s&r.html">Slowed and Reverb</a></li> 
+            <li class="links"><a href="#welcome">Lofi</a></li>  
 
-</script>
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyBdkgkxgQ-b0T1l6l5m9I5v-VXddNDSY3s",
-      authDomain: "animal-database-a50be.firebaseapp.com",
-      projectId: "animal-database-a50be",
-      storageBucket: "animal-database-a50be.appspot.com",
-      messagingSenderId: "1032667502862",
-      appId: "1:1032667502862:web:3c24bef0519b96cf109f5f",
-      measurementId: "G-81BM3VJ6RS"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
+        </ul>   
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>My PlayList</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    
+<BR>                    <span class="songName">Excuses</span>
+                    <span class="songlistplay"><span class="timestamp">02:56<i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<br>                    <span class="songName">295</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<BR>                    <span class="songName">The last ride</span>
+                    <span class="songlistplay"><span class="timestamp">03:03 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+ <BR>                   <span class="songName">No Love</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+ <br>                   <span class="songName">Daku</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<BR>                    <span class="songName">Sarkar</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<br>                    <span class="songName">Waalian</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<br>                    <span class="songName">Dollar</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+<br>                    <span class="songName">We Rollin</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+             <!---->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div> 
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Excuses</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
