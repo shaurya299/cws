@@ -9,15 +9,15 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Excuses", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "295", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},  
-    {songName: "The Last Ride", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "No Love", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Daku", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Sarkar", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Waalian", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Dollar", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
-    {songName: "We Rollin", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
+    {songName: "Excuses", filePath: "1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "295", filePath: "2.mp3", coverPath: "covers/2.jpg"},  
+    {songName: "The Last Ride", filePath: "3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "No Love", filePath: "4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Daku", filePath: "5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Sarkar", filePath: "6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Waalian", filePath: "7.mp3", coverPath: "covers/7.jpg"},
+    {songName: "Dollar", filePath: "8.mp3", coverPath: "covers/8.jpg"},
+    {songName: "We Rollin", filePath: "9.mp3", coverPath: "covers/9.jpg"},
 
 ]
 
